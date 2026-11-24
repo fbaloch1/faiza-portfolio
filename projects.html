@@ -1,20 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Projects — IT portfolio, education, experience, and technology projects.">
+    <meta name="description" content="Completed projects, business experience, and technology learning by Faiza Razzaq Baloch.">
     <title>Projects | Aspiring IT Professional</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <style>
+        .c60-project-section {
+            margin: 72px 0 82px;
+            padding-top: 38px;
+            border-top: 1px solid rgba(255,255,255,.27);
+            scroll-margin-top: 110px;
+        }
+
+        .c60-project-heading {
+            margin-bottom: 28px;
+        }
+
+        .c60-project-heading h2 {
+            font-size: clamp(30px,4vw,48px);
+            line-height: 1.12;
+            letter-spacing: -.035em;
+            margin: 8px 0 16px;
+        }
+
+        .c60-project-heading p:last-child {
+            color: #e4f1fc;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 780px;
+        }
+
+        .c60-project-grid {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 18px;
+        }
+
+        .c60-project-card {
+            background: rgba(18,83,135,.60);
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 16px;
+            padding: 28px;
+            min-width: 0;
+        }
+
+        .c60-project-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 800;
+            color: #d3eaff;
+            letter-spacing: .12em;
+            margin-bottom: 17px;
+        }
+
+        .c60-project-card h3 {
+            font-size: 22px;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            letter-spacing: -.02em;
+        }
+
+        .c60-project-card p {
+            color: #f0f7ff;
+            font-size: 15px;
+            line-height: 1.85;
+            margin-bottom: 16px;
+        }
+
+        .c60-project-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .c60-project-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 390px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin: 18px 0 10px;
+        }
+
+        .c60-image-note {
+            display: block;
+            font-size: 12px;
+            color: #d7eaff;
+            margin-bottom: 18px;
+        }
+
+        .c60-project-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-underline-offset: 5px;
+        }
+
+        .c60-project-card-wide {
+            grid-column: 1 / -1;
+        }
+
+        .c60-project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 20px;
+        }
+
+        .c60-project-tags span {
+            padding: 6px 12px;
+            border: 1px solid rgba(255,255,255,.35);
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        @media (max-width:760px) {
+            .c60-project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .c60-project-card {
+                padding: 22px;
+            }
+
+            .c60-project-section {
+                margin: 50px 0 65px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
+
     <header class="site-header">
         <nav class="container nav" aria-label="Main navigation">
             <a class="brand" href="index.html">Aspiring IT Professional</a>
+
             <button id="mobile-menu-btn" class="menu-button" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation" hidden>☰</button>
+
             <div id="nav-content" class="nav-content">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="about.html">About</a>
@@ -22,6 +154,7 @@
                 <a class="nav-link" href="projects.html" aria-current="page">Projects</a>
                 <a class="nav-link" href="resume.html">Resume</a>
                 <a class="nav-link" href="contact.html">Contact</a>
+
                 <div class="social-links"><a href="mailto:fbaloch@icstars.org" aria-label="Email"><svg aria-hidden="true" focusable="false" class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg></a><a href="https://www.linkedin.com/in/faizarazzaqbaloch/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg aria-hidden="true" focusable="false" class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -32,16 +165,266 @@
             </div>
         </nav>
     </header>
-    <main id="main" class="container" tabindex="-1"><section class="projects-intro"><p class="eyebrow">PROJECTS / LEARNING THROUGH BUILDING</p><h1>Ideas into practice.<br><em>One project at a time.</em></h1><p class="lead">A look at what I’m working on now and what I plan to build next.</p></section><div class="project-pair"><article class="project-entry"><div class="project-entry-top"><span>01 / ARTIFICIAL INTELLIGENCE</span><span class="project-status">In progress</span></div><h2>Medline Project</h2><p class="project-description">I’m working with my team at i.c.stars on an AI-supported solution to help identify recurring operational issues and organize them for follow-up.</p><div class="project-detail"><h3>The goal</h3><p>Bring incident information together, identify related patterns, and support the creation and routing of problem records so teams can address recurring issues.</p></div><div class="project-detail"><h3>What I’m learning</h3><p>How AI can support a practical workflow, how to translate requirements into a proposed solution, and how to collaborate on planning and technical decisions.</p></div><div class="project-keywords"><span>AI modeling</span><span>Problem-solving</span><span>Team collaboration</span></div><p class="project-progress-note">Currently in development. Details will be added as the project progresses.</p></article><article class="project-entry project-entry-next">
-<div class="project-entry-top"><span>02 / STUDENT SUPPORT &amp; ACCESSIBILITY</span><span class="project-status">Planned project</span></div>
-<h2>AccessAble</h2>
-<p class="project-description"><strong>Student Support Appointment Scheduler</strong></p>
-<p class="project-description">A website designed to help students book appointments for IT support, tutoring, and advising while requesting accessibility accommodations, such as wheelchair access, an ASL interpreter, or large-print materials.</p>
-<div class="project-detail"><h3>Planned features</h3><p>Appointment booking, confirmation summaries, and options to view and cancel appointments—all within a simple, accessible, mobile-friendly design.</p></div>
-<div class="project-keywords"><span>Student support</span><span>Accessibility</span><span>Appointment booking</span></div>
-<p class="project-progress-note">Planned project · Website coming soon.</p>
-<a class="button" href="https://example.com" target="_blank" rel="noopener noreferrer" style="margin-top: 20px; align-self: flex-start;">Visit AccessAble ↗</a>
-</article></div></main>
-    <footer class="site-footer"><div class="container footer-row"><p class="small">© <span class="year-span">2026</span> Aspiring IT Professional. All rights reserved.</p><div class="footer-links"><a href="mailto:fbaloch@icstars.org">Email</a><a href="https://www.linkedin.com/in/faizarazzaqbaloch/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/fbaloch1" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></footer>
+
+    <main id="main" class="container" tabindex="-1">
+
+        <section class="projects-intro">
+            <p class="eyebrow">PROJECTS / LEARNING THROUGH BUILDING</p>
+            <h1>Ideas into practice.<br><em>One project at a time.</em></h1>
+            <p class="lead">A collection of projects I’ve completed while developing my technical, business, and leadership skills.</p>
+        </section>
+
+        <div class="project-pair">
+
+            <article class="project-entry">
+                <div class="project-entry-top">
+                    <span>01 / ARTIFICIAL INTELLIGENCE</span>
+                    <span class="project-status">Completed</span>
+                </div>
+
+                <h2>Medline Project</h2>
+
+                <p class="project-description">I worked with my team at i.c.stars to develop an AI-supported solution that helps identify recurring operational incidents, recognize patterns, and organize information for follow-up.</p>
+
+                <div class="project-detail">
+                    <h3>The goal</h3>
+                    <p>The goal was to help teams identify repeated incidents, group related issues, and support the creation and routing of problem records to improve problem management.</p>
+                </div>
+
+                <div class="project-detail">
+                    <h3>What I learned</h3>
+                    <p>Through this project, I strengthened my understanding of AI, data analysis, project management, and teamwork. I learned how to translate business requirements into technical solutions, coordinate responsibilities, and communicate results clearly.</p>
+                </div>
+
+                <div class="project-keywords">
+                    <span>AI modeling</span>
+                    <span>Problem-solving</span>
+                    <span>Data analysis</span>
+                    <span>Team collaboration</span>
+                </div>
+
+                <p class="project-progress-note">Project completed at i.c.stars.</p>
+            </article>
+
+            <article class="project-entry project-entry-next">
+                <div class="project-entry-top">
+                    <span>02 / STUDENT SUPPORT &amp; ACCESSIBILITY</span>
+                    <span class="project-status">Completed</span>
+                </div>
+
+                <h2>AccessAble</h2>
+
+                <p class="project-description"><strong>Online IT Student Support Platform</strong></p>
+
+                <p class="project-description">I developed AccessAble, an online student support website designed to help students access IT assistance, academic guidance, and other support services in one place.</p>
+
+                <div class="project-detail">
+                    <h3>Key features</h3>
+                    <p>The completed website includes a Smart Support Navigator, support request and appointment forms, learning resources, and accessible navigation designed to make student support easier to find and use.</p>
+                </div>
+
+                <div class="project-detail">
+                    <h3>What I learned</h3>
+                    <p>Building AccessAble helped me improve my HTML, CSS, JavaScript, website design, troubleshooting, and GitHub skills. I learned how to organize information, create interactive features, and build a website focused on the needs of its users.</p>
+                </div>
+
+                <div class="project-keywords">
+                    <span>Web development</span>
+                    <span>Accessibility</span>
+                    <span>Student support</span>
+                    <span>Problem-solving</span>
+                </div>
+
+                <p class="project-progress-note">Project completed · Live website available.</p>
+
+                <a
+                    class="button"
+                    href="https://fbaloch1.github.io/accessable/#home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="margin-top:20px;align-self:flex-start"
+                >Explore AccessAble Website ↗</a>
+            </article>
+
+        </div>
+
+        <section class="c60-project-section" id="c60-business">
+            <div class="c60-project-heading">
+                <p class="eyebrow">BUSINESS / CLIENT PROJECT &amp; PROFESSIONAL GROWTH</p>
+                <h2>Learning business through people, projects, and conversations.</h2>
+                <p>My business experiences at i.c.stars helped me understand how professionals solve problems, communicate expectations, build relationships, and work toward a goal.</p>
+            </div>
+
+            <div class="c60-project-grid">
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">01 / CLIENT PROJECT</span>
+                    <h3>Medline — understanding a real business problem</h3>
+
+                    <p>Our Medline project focused on recurring operational incidents and how technology could make them easier to identify and manage. We worked on an AI-supported solution to find patterns, group related incidents, and organize information for problem management.</p>
+
+                    <p>It taught me that a technical solution begins with understanding the business problem, the needs of the client, and the people who will use the system.</p>
+                </article>
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">02 / TEAMWORK &amp; PROJECT MANAGEMENT</span>
+                    <h3>Managing responsibilities and working as a team</h3>
+
+                    <p>As a Project Manager during my i.c.stars internship, I helped coordinate responsibilities, track deadlines, organize tasks, and communicate with teammates. A successful project depends on everyone understanding their responsibilities and how their work contributes to the goal.</p>
+
+                    <p>I learned to support teammates, listen to different ideas, and follow through on responsibilities.</p>
+
+                    <img
+                        src="assets/high-tea-group.png"
+                        alt="Faiza and her i.c.stars cohort together"
+                        loading="lazy"
+                    >
+
+                    <span class="c60-image-note">
+                        My i.c.stars cohort — learning and collaborating together.
+                    </span>
+                </article>
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">03 / MENTOR MEETINGS</span>
+                    <h3>Learning from experienced professionals</h3>
+
+                    <p>Mentor meetings helped me understand workplace expectations and professional development. Hearing different perspectives encouraged me to ask questions and consider how advice could support my growth.</p>
+
+                    <p>I learned that mentorship is not only receiving guidance. It also means being open to feedback and taking responsibility for improving.</p>
+                </article>
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">04 / TEA CONVERSATIONS</span>
+                    <h3>Building connections through meaningful conversations</h3>
+
+                    <p>Tea Conversations gave me an opportunity to connect with professionals and hear about their career experiences. Listening to the challenges and decisions they described helped me see different paths to professional growth.</p>
+
+                    <p>I practiced introducing myself, asking thoughtful questions, and listening carefully. I learned the value of genuine professional relationships.</p>
+
+                    <a class="c60-project-link" href="media.html#icstars-journey">
+                        Explore moments from my i.c.stars journey ↗
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="c60-project-section" id="c60-technology">
+            <div class="c60-project-heading">
+                <p class="eyebrow">TECHNOLOGY / HANDS-ON LEARNING</p>
+                <h2>Growing through practice, testing, and problem-solving.</h2>
+                <p>Technology challenged me to learn unfamiliar concepts, work through mistakes, and become more confident using technical tools.</p>
+            </div>
+
+            <div class="c60-project-grid">
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">01 / AI DEVELOPMENT</span>
+                    <h3>Building and understanding an AI model</h3>
+
+                    <p>During my i.c.stars training, I gained experience working with an AI model and learning how data can support a practical solution.</p>
+
+                    <p>I worked with Python, SQL, Power BI, and Microsoft Fabric. I learned to handle information carefully and communicate results clearly.</p>
+
+                    <div class="c60-project-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                        <span>Microsoft Fabric</span>
+                    </div>
+                </article>
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">02 / GEEK WEEK</span>
+                    <h3>Geek Week — putting my skills to the test</h3>
+
+                    <p>Geek Week challenged me through SQL, Excel, keyboard shortcuts, and timed tasks. It taught me to read questions carefully, approach problems step by step, and practice for accuracy and improvement.</p>
+
+                    <p>Receiving my Geek Certified badge was a meaningful moment in my learning journey.</p>
+
+                    <img
+                        src="assets/Geek-Certified-Badge-Faiza.png"
+                        alt="Faiza's Geek Certified badge from i.c.stars"
+                        loading="lazy"
+                    >
+
+                    <span class="c60-image-note">
+                        My Geek Certified badge from Geek Week.
+                    </span>
+
+                    <a
+                        class="c60-project-link"
+                        href="assets/Geek-Certified-Badge-Faiza.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >View my Geek Certified badge ↗</a>
+
+                    <div class="c60-project-tags">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Keyboard shortcuts</span>
+                        <span>Timed testing</span>
+                    </div>
+                </article>
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">03 / DEBUGGING &amp; TESTING</span>
+                    <h3>Learning from technical challenges</h3>
+
+                    <p>When something does not work, I try to identify the problem, read the available information, check my steps, and test possible solutions.</p>
+
+                    <p>Working through problems with teammates taught me to ask questions and document what worked. Careful testing matters as much as writing code.</p>
+                </article>
+
+                <article class="c60-project-card">
+                    <span class="c60-project-label">04 / GITHUB &amp; COLLABORATION</span>
+                    <h3>Using GitHub to organize technical work</h3>
+
+                    <p>GitHub helped me understand the importance of keeping work organized and maintaining a record of changes. Version control supports collaboration when different people contribute.</p>
+
+                    <p>I am learning to review project files and make changes carefully without affecting existing work.</p>
+
+                    <a
+                        class="c60-project-link"
+                        href="https://github.com/fbaloch1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Explore my GitHub profile ↗</a>
+                </article>
+
+                <article class="c60-project-card c60-project-card-wide">
+                    <span class="c60-project-label">05 / TECHNICAL &amp; WORKPLACE TOOLS</span>
+                    <h3>Connecting technology skills to professional work</h3>
+
+                    <p>Python and SQL help me work with information, while Excel, Power BI, and Microsoft Fabric help me organize and understand data.</p>
+
+                    <p>My experience with Microsoft Office and digital documentation in healthcare taught me that technology also involves organizing information, protecting data, communicating with teams, and helping people work more efficiently.</p>
+
+                    <div class="c60-project-tags">
+                        <span>Microsoft Office</span>
+                        <span>Excel</span>
+                        <span>Data analysis</span>
+                        <span>Documentation</span>
+                        <span>Collaboration</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <p class="small">© <span class="year-span">2026</span> Aspiring IT Professional. All rights reserved.</p>
+
+            <div class="footer-links">
+                <a href="mailto:fbaloch@icstars.org">Email</a>
+                <a href="https://www.linkedin.com/in/faizarazzaqbaloch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/fbaloch1" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
